@@ -1,0 +1,75 @@
+.GameOuterBox{
+    width: 900px;
+    height: 900px;
+    border: 2px solid;
+   margin-left: auto;
+   margin-right: auto;
+   
+   
+}
+
+.UpperFrame{
+    margin-top: 10px;
+    height: 70px;
+    border: 1px solid;
+    display: flex;
+    font-size: 4ch;
+    font-style: italic;
+}
+
+.PlayerName{
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Tries{
+margin-left: 480px;
+margin-top: 15px;
+}
+
+
+.case{
+    margin-top: 40px;
+    margin-left: 21px;
+    display :inline-block;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.FrontImage{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.BackImage{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(-360deg);
+}
+
+.flipped .FrontImage{
+    transition-duration: 0.7s;
+    transform: rotateY(180deg); 
+    
+}
+
+
+.flipped .BackImage {
+    transition-duration: 0.7s;
+    transform: rotateY(0deg);
+}
+
+
+.done .FrontImage{
+    transform: rotateY(180deg); 
+}
+
+.done .BackImage{
+    transform: rotateY(0deg);
+}
